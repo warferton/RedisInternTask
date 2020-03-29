@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ListView fx:id="keyList" layoutX="23.0" layoutY="73.0" prefHeight="313.0" prefWidth="200.0" />
+      <Separator layoutX="236.0" layoutY="76.0" orientation="VERTICAL" prefHeight="313.0" prefWidth="14.0" />
+      <Separator layoutX="243.0" layoutY="76.0" orientation="VERTICAL" prefHeight="313.0" prefWidth="14.0" />
+      <ListView fx:id="fieldList" layoutX="267.0" layoutY="73.0" prefHeight="313.0" prefWidth="158.0" />
+      <Label layoutX="300.0" layoutY="46.0" text="Fields">
+         <font>
+            <Font name="Damascus Regular" size="16.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="46.0" text="Keys">
+         <font>
+            <Font name="Damascus Regular" size="16.0" />
+         </font></Label>
+      <Button layoutX="43.0" layoutY="400.0" mnemonicParsing="false" onAction="#flusher" text="FlushAll" />
+      <Button layoutX="217.0" layoutY="400.0" mnemonicParsing="false" onAction="#refresher" text="Refresh" />
+      <Button layoutX="399.0" layoutY="400.0" mnemonicParsing="false" onAction="#showData" text="Show" />
+      <SplitPane layoutX="438.0" layoutY="72.0" prefHeight="313.0" prefWidth="147.0">
+         <items>
+            <Label fx:id="valueText" alignment="CENTER" contentDisplay="CENTER" prefHeight="278.0" prefWidth="145.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Hiragino Sans W5" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </SplitPane>
+      <Label layoutX="485.0" layoutY="46.0" text="Value">
+         <font>
+            <Font name="Damascus Bold" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="4.0" layoutY="23.0" prefHeight="23.0" prefWidth="593.0" />
+      <Label alignment="CENTER" layoutX="126.0" layoutY="6.0" prefHeight="17.0" prefWidth="327.0" text="Resdis Server Data Getter">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
