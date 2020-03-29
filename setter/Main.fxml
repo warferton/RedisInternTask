@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <HBox prefHeight="66.0" prefWidth="600.0">
+         <effect>
+            <Blend />
+         </effect>
+         <children>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="661.0" text="REDIS SERVER DATA SETTER" />
+         </children></HBox>
+      <Separator prefHeight="43.0" prefWidth="521.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Separator>
+      <HBox prefHeight="37.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="117.0" text="Create New Key" />
+            <TextField fx:id="keyText" prefHeight="35.0" prefWidth="167.0" />
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="117.0" text="Create New Field" />
+            <TextField fx:id="fieldText" prefHeight="35.0" prefWidth="167.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="17.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="keyErrorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="332.0" textFill="RED" />
+         </children>
+      </HBox>
+      <HBox prefHeight="44.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="117.0" text="Or" />
+            <ComboBox fx:id="keyBox" onAction="#keyChosen" prefHeight="27.0" prefWidth="167.0" promptText="Select Existing Key" visibleRowCount="5" />
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="116.0" text="Or" />
+            <ComboBox fx:id="fieldBox" onAction="#fieldChosen" prefHeight="27.0" prefWidth="168.0" promptText="Select Existing Field" visibleRowCount="5" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="91.0" prefWidth="392.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="58.0" text="Value" />
+            <TextField fx:id="valueText" prefHeight="35.0" prefWidth="131.0" />
+         </children>
+      </HBox>
+      <Label fx:id="statusLabel" alignment="CENTER" prefHeight="17.0" prefWidth="119.0" textFill="#3dab30">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Declaredata" prefHeight="27.0" prefWidth="87.0" text="Set" />
+            <Button mnemonicParsing="false" onAction="#reseter" prefHeight="27.0" prefWidth="87.0" text="Reset" />
+         </children>
+      </HBox>
+      <Separator prefHeight="10.0" prefWidth="600.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Separator>
+      <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="610.0" text="Alex Kirillov, 2020(c) AllRights Reserved.">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="165.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PupupController">
+   <children>
+      <Button fx:id="close" layoutX="79.0" layoutY="110.0" mnemonicParsing="false" onAction="#okBtn" text="Ok" />
+      <Button layoutX="210.0" layoutY="110.0" mnemonicParsing="false" onAction="#setDefault" text="Set Default" />
+      <Label alignment="TOP_LEFT" layoutX="21.0" layoutY="31.0" prefHeight="62.0" prefWidth="300.0" text="Some parameters were not set! Set the necessary data or press the 'Set Default' button to set default values." wrapText="true">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="14.0" text="Warning!" textFill="#e11313" />
+   </children>
+</AnchorPane>
